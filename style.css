@@ -1,0 +1,677 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .video-slide video{
+    height:85vh;
+
+ }
+  .attributes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px; 
+    margin-left: 100px;
+}
+
+.attributes a {
+    text-decoration: none;
+    padding: 10px 20px; 
+    color: white;
+    font-weight: 500;
+    white-space: nowrap; 
+    margin-top: 20px;
+    font-weight: 700;
+    color: green;
+
+}
+.hamburger {
+    display: none; /* Hidden by default on larger screens */
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px;
+    position: relative;
+}
+
+/* Three-bar hamburger lines */
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+.main_gallery{
+position: relative;
+display: block;
+top: 30;
+}
+.gall-menu{
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 999;
+}
+.gall-menu a{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: center;
+z-index: 999;
+}
+.gall-menu a:hover{
+background-color: rgb(7, 235, 223);
+color: black;
+text-decoration: none;
+z-index: 10;
+}
+.main_gallery:hover .gall-menu{
+display: block;
+}
+
+.social-media {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:rgb(61, 196, 61);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 775px;
+    margin-top: 95px;
+    border-color: black;
+    border-width: 3px;
+   
+}
+.social-media:hover{
+    background-color:yellow;
+    color: black;
+}
+.dropdown {
+    display: none; /* Hide by default */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-left: 800px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+}
+.dropdown a:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}  
+ 
+.half-hr {
+    width: 50%; 
+    height: 5px; 
+    background-color: rgb(38, 163, 212); 
+    border: none; 
+    margin-bottom: -10px;
+    margin-left: 0;
+}
+        .right-side {
+            max-width: 100%;
+            width: 100%;
+            height: 400px;
+            background-color: rgb(245, 239, 239);
+            margin-top: 10px;
+            position: relative;
+            padding: 20px;
+        }
+        .top-container{
+            max-width: 100%;
+            width: 100%;
+            height: 400px;
+            background-color: rgb(245, 239, 239);
+            margin-top: 10px;
+            position: relative;
+            padding: 10px 9vw;
+
+        }
+        .top-container img {
+            width: 50px;
+            margin-right: 15px;
+        }
+
+        .top-container p {
+            font-size: 22px;
+            font-weight: 300;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .top-container strong {
+            color: rgba(36, 36, 211, 0.842);
+        }
+        .right-side{
+            position: absolute;
+            left: 50%;
+            display: inline-block;
+            width: 700px;
+            top: 0%;  
+        height: 300px;      }
+
+        .left-side{
+            margin-top: 20px;
+        }
+.half2-hr{
+    width: 50%; 
+    height: 5px; 
+    background-color: rgb(38, 163, 212); 
+    border: none; 
+     position: relative;
+    margin-left: 710px;
+}
+.second-container {
+    width: auto;
+    padding: 40px 20px;  
+    box-sizing: border-box;  
+    margin-top: 40px;
+}
+
+.solar {
+    display: grid;
+    grid-template-columns: 500px 1fr;    
+  background-color: white;
+}
+/* Solar-One Styles */
+.solar-one {  
+   height: auto;
+   width: 100%;
+}
+
+/* Solar-Two Styles */
+.solar-two {
+    background-color:transparent;
+   width: 100pz;
+   margin-left:95;
+}
+
+.position-relative {
+    position: relative;
+    /* Other styles */
+}
+
+.absolute-right {
+    position: absolute;
+    top: -30px; 
+    right: 20px;
+    font-size: 15px;
+    font-weight:200;
+}
+.tag{
+    display: inline-block; 
+    transform: translateY(-10px); 
+    text-decoration: none;
+    margin-top: 15;
+}
+.sub-solar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+    gap: 10px; /* Adds a 5px gap between each column */
+}
+.sub-solar p{
+    margin-top: 10px;
+}
+.fan1, .fan2, .fan3 {
+    width: 100%; /* Set the width to 100px */
+    height: auto; /* Set the height to 100px */
+    cursor: pointer;
+}
+.solar img{
+height: 120px;
+width: 220px;
+object-fit: cover;
+}
+
+.wind-family {
+    display: grid;
+    grid-template-columns: 1fr 630px;
+    height: 350px;
+    gap: 90px; /* Added px for the gap value */
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.wind-left {
+    margin-top: -20px;
+    height: 100%;
+width: 100%;
+margin-left: 70px;
+}
+
+.wind-right {
+height: 100%;
+max-width:80%;
+box-sizing: border-box;
+margin-left: 40px;
+}
+.wind-three {
+    margin-top: 70px;
+    margin-right: 70px;
+}
+.wc{
+    margin-left: 510px;
+    margin-top: -60;
+}
+.wind-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+gap: 8px;
+}
+.wind1,.wind2,.wind3{
+    width: 100%; /* Set the width to 100px */
+    height: 150; /* Set the height to 100px */
+    cursor: pointer;
+    object-fit: cover;
+}
+.wind-left p{
+margin-top: 20px;
+}
+ 
+.hybrid-both{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    height: 400px;
+width: 95%;
+background-color: rgb(255, 255, 255);
+margin-left: 4em;
+}
+.hybrid-left{
+    background-color: rgb(255, 255, 255);
+}
+.hybrid-right{
+     
+    margin-top: -1rem;
+    margin-left: 35px;
+}
+.side{
+  text-align: right;
+  margin-top: -3.5em;
+  margin-right:90px ;
+}
+.hybrid-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 9px;
+    width: 90%;
+    height: 90%;
+} 
+.hybrid-images img{
+    width: 230px;
+    height: 150px;
+}
+.leaders{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    height: 400px;
+    max-width: 100%;
+    
+    background-color: rgb(236, 225, 225);
+    padding: 70px 120px 70px 120px;
+}
+
+.leader-left img,.leader-right img{
+    height: 250px;
+    width: 40%;
+    object-fit: cover;
+}
+.leader-left,.leader-right{
+    margin-top: -40px;
+}
+
+.sub-correction,.sub-correction2{
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -200px;
+}
+.corrector{
+    margin-top: 66px;
+} 
+
+.sustainability{
+    margin-top: 30px;
+    position: relative;
+    background-color: rgb(209, 195, 195);
+    max-width: 100%;
+    height: 600px;
+}
+.sustainability h1{
+    position: absolute;
+    left: 4%;
+    text-transform: capitalize;
+}
+.total{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px 60px;
+    
+}
+.total img{
+    width: 280px;
+    height: 160px;
+margin-top: 25px;
+}
+.total h1{
+    margin-left: 20rem;
+    margin-top: -6rem;
+    font-family: roboto;
+    color: rgb(68, 0, 255);
+}
+.right-services h1{
+    margin-left: 64rem;
+    margin-top: -6rem;
+    font-family: roboto;
+    color: rgb(68, 0, 255);
+}
+
+@keyframes borderAnimation {
+    0% { border-color: blue; }
+    25% { border-color: red; }
+    50% { border-color: green; }
+    75% { border-color: orange; }
+    100% { border-color: blue; }
+}
+.visit a:hover{
+    background-color: yellow;
+    color: black;
+}
+.div-2 , .div-2 a{
+    color: gray;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 900;
+    align-items: center;
+}
+.div-4 A{
+    background-color: rgb(221, 221, 221);
+    padding: 20px;
+    border-radius: 40px;
+    margin-left: 10px;text-decoration: none;
+}
+.hamburger{
+    color:rgba(230, 235, 238, 0.925);
+}
+.additional img{
+    margin-left: -3rem;
+}
+.mobile-header {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    height: 100%;
+    width: 70%;
+    background-color: rgb(226, 226, 226);
+    transition: 0.3s ease-in-out; /* Smooth transition */
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 30px;
+}
+
+.mobile-header ul {
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.mobile-header ul li {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.mobile-header ul li a {
+    text-decoration: none;
+    color: coral;
+    font-size: 20px;
+}
+
+.hamburger, .cancel {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.cancel {
+    display: none; /* Initially hide cancel icon */
+}
+
+.additional,.hamburger{
+    display: none;
+}
+    @media (min-width: 50px) and (max-width: 450px) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          
+        }
+        body {
+            max-width: 450px;
+            overflow-x: hidden;
+            align-items: center;
+        }
+    
+ 
+        .header img {
+            width: 40vw;
+            margin-top: 20px;
+            padding-right: 30px;
+        }
+    
+        .gray-divider {
+            margin-left: 27%;
+        }
+     .upline2{
+ margin-left: 90vw;
+     }
+       .renewable-kar {
+            margin-left: 27%;
+            font-size: medium;
+        }
+    
+        .social-media,
+        .dropdown, .half2-hr,.half-hr{
+            display: none;
+        }
+    
+        .slider {
+            padding-top: 9.8rem;
+            z-index: 1; /* Slider is behind attributes */
+        }
+    
+        .video-slide video{
+            height: 40vh;
+        }
+        .top-container {
+            margin-top: 2em;
+            width: 90%;
+            height: auto;
+            padding: 10px;
+            z-index: 1;
+            background-color:transparent;
+            margin-left: 3rem;
+             
+        }
+    .leader-left{
+        z-index: 1;
+    }
+        .left-side img {
+            height: 15vh;
+            padding-right: 6em;
+            width: 250px;
+            padding-bottom: 20px;
+            padding-left: 3%;
+            margin-left: 3rem;
+        }
+    .second-container,.wind-family,.hybrid,.clients-list{
+        margin-left: 3rem;
+    }
+        .right-side {
+            display: none;
+        }
+    
+      
+    
+        /* Video and Slider Z-Index Lowered */
+        .slider video, .video-slide video{
+            position: relative;
+    z-index: 10; 
+    top: 5%;/* Lower z-index for the video */
+        }
+ 
+.solar {
+    grid-template-columns: 1fr; /* One column layout for smaller screens */
+    margin-left: -2rem;
+    width: 90%;
+    padding-top: -70px;
+}
+
+.solar-one h1{
+    padding: 5px;
+    margin-left: -6rem;
+}
+ 
+.solar-two {
+    text-align: center; /* Center-align text */
+    margin-left: 0;
+    font-size: 1rem; /* Adjust font size */
+}
+
+h2 {
+    font-size: 1.5rem; /* Smaller heading for mobile */
+}
+
+.absolute-right {
+    right: 0; /* Adjust positioning for smaller screens */
+    font-size: 0.8rem; /* Smaller text */
+}
+
+.sub-solar {
+    grid-template-columns: 1fr; /* Make it a single column on mobile */
+    gap: 5px;
+}
+
+.fan1, .fan2, .fan3 {
+    margin: 10px 0; /* Add spacing between items */
+}
+
+video {
+    width: 100%; /* Full width video */
+    height: auto;
+}
+
+h1, h2, p {
+    font-size: 1rem; /* Adjust text size for readability */
+    margin-top: 10px;
+}
+
+.tag {
+    padding: 8px 15px;
+    font-size: 1rem; /* Smaller button text */
+}
+.left-side img{
+    padding-left: 86px;
+}
+.absolute-right p{
+     display: none;
+}
+.solar-guru {
+    margin-left: 20px;
+} 
+.wind-family,.wind-images{
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+} 
+.wind-right video{
+    display:none;
+}
+.wind-left  {
+    width: 90%;
+    margin-left: 1rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.wind-guru{
+    width: 90%;
+}
+.wind2,.wind3{
+    margin-top: 50px;
+}
+
+.hybrid-both{
+    margin-top:640px;
+grid-template-columns: 1fr;
+}
+.hybrid-both{
+    margin-left: -2rem;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+}
+.hybrid-left video{
+    display: none;
+}
+.hybrid-right div{
+    grid-template-columns: 1fr;
+}
+.leaders,.sustainability,.contact-box,.main-footer{
+display: none;
+}
+.clients-list h1,.clients-list p{
+margin-top:40vh;
+width: 90%;
+margin-left: -2rem;
+}
+.clients-list img{
+    margin-left: -2rem;
+}
+ 
+.additional div{
+    margin-left: 3rem;
+}
+.mobile-header {
+    display: flex; /* Show sidebar for mobile */
+}
+
+.mobile-header ul li a {
+    font-size: 18px; /* Adjust font size for smaller screens */
+}
+
+.hamburger, .cancel {
+    font-size: 25px; /* Slightly smaller icons for small screens */
+}
+
+.mobile-header ul {
+    padding-right: 120px; /* Adjust padding for smaller screens */
+}
+
+.mobile-header ul li {
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+}
+.additional{
+    display: block;
+}
+.hamburger{
+    display: block;
+    color: black;
+}
+}
